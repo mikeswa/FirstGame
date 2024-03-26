@@ -1,5 +1,14 @@
-[gd_scene format=3 uid="uid://blripj8v3gujn"]
+[gd_scene load_steps=2 format=3 uid="uid://blripj8v3gujn"]
+
+[ext_resource type="Script" path="res://textbox.gd" id="1_5hk7r"]
 
 [node name="TextBox" type="TextEdit"]
 offset_right = 248.0
 offset_bottom = 106.0
+context_menu_enabled = false
+shortcut_keys_enabled = false
+selecting_enabled = false
+deselect_on_focus_loss_enabled = false
+drag_and_drop_selection_enabled = false
+middle_mouse_paste_enabled = false
+script = ExtResource("1_5hk7r")
