@@ -5,6 +5,7 @@
 [node name="TextBox" type="TextEdit"]
 offset_right = 248.0
 offset_bottom = 106.0
+focus_mode = 1
 context_menu_enabled = false
 shortcut_keys_enabled = false
 selecting_enabled = false
