@@ -6,6 +6,7 @@ func _ready():
 	$TimerLabel.visible = false
 	$TypePrompt.visible = false
 	$TypeTimerLabel.visible = false
+	$TextEdit.visible = false
 	
 	$StartButton.pressed.connect(_start_button_pressed)
 	$Countdown.timeout.connect(_timer_stopped)
@@ -33,6 +34,7 @@ func _timer_stopped():
 	#start the typing test timer
 	$TypeTimer.start(30)
 	$TypeTimerLabel.visible = true
+	$TextEdit.visible = true
 	
 #called on typing timer stoppage
 func _typetimer_stopped():
@@ -40,3 +42,4 @@ func _typetimer_stopped():
 	$StartButton.visible = true
 	$TypeTimerLabel.visible = false
 	$TypePrompt.visible = false
+	$TextEdit.visible = false
